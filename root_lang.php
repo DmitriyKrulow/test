@@ -1,4 +1,12 @@
 <?php
-system('ls -la');
-system('cat en_lang.php');
+$path = ".";
+    $filelist = array();
+
+    if($handle = opendir($path)){
+        while($entry = readdir($handle)){
+            echo $entry."<br>";
+        }
+      
+        closedir($handle);
+    }
 ?>
