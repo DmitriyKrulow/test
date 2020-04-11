@@ -9,6 +9,7 @@ $path = ".";
       
         closedir($handle);
     }
-$homepage = file_get_contents('fr_lang.php');
+echo "_____________________"
+$homepage = file_get_contents('en_lang.php');
 echo $homepage;
 ?>
